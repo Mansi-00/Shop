@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'crispy_form',
 ]
 
 SITE_ID = 1
@@ -138,6 +139,7 @@ if DEBUG:
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 AUTHENTICATION_BACKENDS = [
 
@@ -187,5 +189,5 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'Enter Your Email'
-EMAIL_HOST_PASSWORD = 'Enter Your Email Password'
+EMAIL_HOST_USER = 'Your Email ID Here'
+EMAIL_HOST_PASSWORD = 'Your Email Password Here'
